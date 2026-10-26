@@ -1,0 +1,26 @@
+from django.urls import path
+from . import views
+urlpatterns=[
+ path("sites/<uuid:website_id>/reviews/<uuid:share_id>/",views.manage_review),
+ path("sites/<uuid:website_id>/media/",views.media_library),
+ path("sites/<uuid:website_id>/templates/<uuid:design_id>/",views.saved_design),
+ path("sites/<uuid:website_id>/templates/<uuid:design_id>/versions/<int:number>/",views.saved_template_version),
+ path("sites/<uuid:website_id>/sections/<uuid:design_id>/",views.saved_design, {'sections': True}),
+ path("sites/<uuid:website_id>/revisions/",views.revisions),
+ path("sites/<uuid:website_id>/revisions/<uuid:revision_id>/",views.read_revision),
+ path("sites/<uuid:website_id>/revisions/<uuid:revision_id>/restore/",views.restore_revision),
+ path("sites/<uuid:website_id>/globals/",views.global_sections),
+ path("sites/<uuid:website_id>/globals/<uuid:section_id>/",views.global_section),
+ path("sites/<uuid:website_id>/globals/<uuid:section_id>/publish/",views.publish_global_section),
+ path("sites/<uuid:website_id>/templates/",views.saved_templates),
+ path("sites/<uuid:website_id>/sections/",views.saved_sections),
+ path("csrf/",views.csrf_cookie),
+ path("reviews/<uuid:share_id>/",views.read_review),
+ path("sites/<uuid:website_id>/",views.website),
+ path("sites/<uuid:website_id>/publish/",views.publish_website),
+ path("sites/<uuid:website_id>/reviews/",views.make_review),
+ path("reviews/exchange/",views.exchange_review),
+ path("reviews/<uuid:share_id>/comments/",views.review_comments),
+ path("reviews/<uuid:share_id>/threads/<uuid:thread_id>/",views.resolve_thread),
+ path("reviews/<uuid:share_id>/revoke/",views.revoke_review),
+]
