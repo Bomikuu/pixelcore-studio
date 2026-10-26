@@ -1,0 +1,26 @@
+{
+  "name": "@sitebuilder/editor",
+  "version": "0.1.0",
+  "type": "module",
+  "exports": {
+    ".": {
+      "types": "./src/index.d.ts",
+      "default": "./src/index.js"
+    },
+    "./ui": "./src/components/ui/index.js",
+    "./tokens": "./src/tokens.js",
+    "./styles": "./src/workspace/styles.js"
+  },
+  "files": [
+    "src"
+  ],
+  "sideEffects": false,
+  "dependencies": {
+    "@sitebuilder/core": "0.1.0",
+    "@sitebuilder/renderer": "0.1.0"
+  },
+  "optionalDependencies": {
+    "@sitebuilder/freeform": "0.1.0",
+    "@sitebuilder/components": "0.1.0"
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "name": "@sitebuilder/review",
+  "version": "0.1.0",
+  "type": "module",
+  "exports": {
+    ".": {
+      "types": "./src/index.d.ts",
+      "default": "./src/index.js"
+    }
+  },
+  "files": [
+    "src"
+  ],
+  "sideEffects": false,
+  "dependencies": {
+    "@sitebuilder/core": "0.1.0",
+    "@sitebuilder/renderer": "0.1.0",
+    "@sitebuilder/editor": "0.1.0"
+  }
+}

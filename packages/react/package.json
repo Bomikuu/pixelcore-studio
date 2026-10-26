@@ -1,0 +1,27 @@
+{
+  "name": "@sitebuilder/react",
+  "version": "0.1.0",
+  "type": "module",
+  "exports": {
+    ".": {
+      "types": "./src/index.d.ts",
+      "default": "./src/index.js"
+    },
+    "./server": "./src/server.js"
+  },
+  "files": [
+    "src"
+  ],
+  "sideEffects": false,
+  "peerDependencies": {
+    "react": ">=19.0.0"
+  },
+  "dependencies": {
+    "@sitebuilder/core": "0.1.0",
+    "@sitebuilder/renderer": "0.1.0",
+    "@sitebuilder/editor": "0.1.0"
+  },
+  "optionalDependencies": {
+    "@sitebuilder/components": "0.1.0"
+  }
+}
