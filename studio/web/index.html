@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="robots" content="noindex,nofollow" />
+    <title>Pixelcore Studio</title>
+    <link rel="stylesheet" href="/studio/web/states.css" />
+    <link rel="stylesheet" href="/packages/renderer/src/fonts.css" />
+    <link
+      rel="icon"
+      type="image/webp"
+      href="/packages/editor/src/assets/pixelcore-studio-icon.webp"
+    />
+    <script type="importmap">
+      {
+        "imports": {
+          "@sitebuilder/core": "/packages/core/src/index.js",
+          "@sitebuilder/editor": "/packages/editor/src/index.js",
+          "@sitebuilder/review": "/packages/review/src/index.js",
+          "@sitebuilder/freeform": "/packages/freeform/src/index.js",
+          "@sitebuilder/renderer": "/packages/renderer/src/index.js",
+          "@sitebuilder/components": "/packages/components/src/index.js",
+          "@sitebuilder/editor/ui": "/packages/editor/src/components/ui/index.js",
+          "@sitebuilder/editor/tokens": "/packages/editor/src/tokens.js",
+          "@sitebuilder/editor/styles": "/packages/editor/src/workspace/styles.js"
+        }
+      }
+    </script>
+    <style>
+      html,
+      body {
+        margin: 0;
+        min-height: 100%;
+        background: #f3f5f8;
+      }
+      #app {
+        min-height: 100dvh;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="app">
+      <section class="studio-state fullscreen" role="status" aria-live="polite" aria-busy="true">
+        <div class="state-spinner" aria-hidden="true"></div>
+        <div class="state-copy">
+          <p class="state-title">Opening Pixelcore Studio…</p>
+          <p class="state-description">Getting your workspace ready.</p>
+        </div>
+      </section>
+    </div>
+    <noscript
+      ><style>
+        #app {
+          display: none;
+        }
+      </style>
+      <p class="studio-state">Enable JavaScript to open Pixelcore Studio.</p></noscript
+    >
+    <script type="module" src="/studio/web/app.js"></script>
+  </body>
+</html>

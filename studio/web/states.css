@@ -1,0 +1,183 @@
+.studio-state {
+  box-sizing: border-box;
+  min-height: calc(100dvh - 160px);
+  width: 100%;
+  padding: 48px 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+  text-align: center;
+  color: var(--editor-text, #1d2433);
+  font: 13px/1.6 var(--editor-font, Manrope, system-ui, sans-serif);
+  overflow-wrap: anywhere;
+}
+.studio-state.fullscreen {
+  min-height: 100dvh;
+  background: var(--editor-background, #f3f5f8);
+}
+.studio-state.compact {
+  min-height: 280px;
+  padding: 32px 20px;
+}
+.studio-state .state-copy {
+  max-width: 440px;
+  width: 100%;
+  margin: 0;
+}
+.studio-state .state-title {
+  font-size: 24px;
+  line-height: 1.3;
+  letter-spacing: -0.02em;
+  font-weight: 650;
+  margin: 0 0 12px;
+  color: var(--editor-text, #1d2433);
+}
+.studio-state .state-description {
+  margin: 0;
+  color: var(--editor-muted, #566176);
+  font-size: 13px;
+  line-height: 1.7;
+}
+.studio-state .state-actions {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  width: 100%;
+  max-width: 440px;
+}
+.studio-state .ui-button,
+.studio-state .state-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  border: 1px solid var(--editor-controlBorder, #7c879a);
+  border-radius: 6px;
+  background: var(--editor-surface, #fff);
+  color: var(--editor-text, #1d2433);
+  padding: 10px 16px;
+  min-height: 44px;
+  box-sizing: border-box;
+  text-decoration: none;
+  font: 600 12px/1.5 var(--editor-font, Manrope, system-ui, sans-serif);
+  cursor: pointer;
+}
+.studio-state .ui-button.primary,
+.studio-state .state-link.primary {
+  background: var(--editor-primary, #3d5afe);
+  border-color: var(--editor-primary, #3d5afe);
+  color: var(--editor-onPrimary, #fff);
+}
+.studio-state .ui-button:hover,
+.studio-state .state-link:hover {
+  background: var(--editor-selected, #e9edfa);
+}
+.studio-state .ui-button.primary:hover,
+.studio-state .state-link.primary:hover {
+  background: var(--editor-primaryHover, #2947db);
+}
+.studio-state .ui-button:focus-visible,
+.studio-state .state-link:focus-visible,
+.studio-state summary:focus-visible {
+  outline: 2px solid var(--editor-focus, #2448d8);
+  outline-offset: 4px;
+}
+.studio-state .ui-button:disabled {
+  opacity: 0.5;
+  cursor: wait;
+}
+.studio-state .state-details {
+  max-width: 440px;
+  width: 100%;
+  font-size: 12px;
+  color: var(--editor-muted, #566176);
+}
+.studio-state .state-details summary {
+  cursor: pointer;
+  width: fit-content;
+  margin: auto;
+  padding: 4px;
+}
+.studio-state .state-details p {
+  margin: 12px 0 0;
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+}
+.studio-state .state-action-error {
+  color: var(--editor-danger, #b42335);
+  margin: 0;
+  max-width: 440px;
+}
+.studio-state .state-illustration {
+  display: block;
+  width: min(256px, 100%);
+  height: auto;
+  aspect-ratio: 256/176;
+  object-fit: contain;
+}
+.studio-state [hidden] {
+  display: none !important;
+}
+.state-spinner {
+  box-sizing: border-box;
+  width: 36px;
+  height: 36px;
+  flex-shrink: 0;
+  border: 3px solid var(--editor-border, #dce1ea);
+  border-top-color: var(--editor-primary, #3d5afe);
+  border-radius: 50%;
+  animation: studio-spinner-turn 0.75s linear infinite;
+}
+.state-spinner.is-static {
+  animation: none;
+}
+@keyframes studio-spinner-turn {
+  to {
+    transform: rotate(360deg);
+  }
+}
+@media (max-width: 650px) {
+  .studio-state {
+    min-height: calc(100dvh - 128px);
+    padding: 32px 16px;
+    gap: 20px;
+  }
+  .studio-state.fullscreen {
+    min-height: 100dvh;
+  }
+  .studio-state .state-title {
+    font-size: 22px;
+  }
+  .studio-state .state-illustration {
+    width: 220px;
+  }
+  .studio-state .state-actions > * {
+    flex: 1 1 160px;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .state-spinner {
+    animation: none;
+  }
+}
+@media (forced-colors: active) {
+  .state-spinner {
+    border-color: GrayText;
+    border-top-color: Highlight;
+  }
+  .studio-state .ui-button,
+  .studio-state .state-link {
+    border: 1px solid ButtonText;
+  }
+}
+
+.studio-state .state-reconnect {
+  width: 100%;
+  max-width: 360px;
+}
+.studio-state .studio-platforms:empty {
+  display: none;
+}
