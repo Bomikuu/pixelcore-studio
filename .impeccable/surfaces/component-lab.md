@@ -1,0 +1,5 @@
+# Component Lab
+
+Mode: Operate. Standalone Studio administrator page at `/studio/components`, approved by the user on 24 October 2026. Preserve Pixelcore branding, compact live wordmark, existing Manrope/blue/neutral light and dark tokens, canonical controls and custom tooltips. Library cards represent actual imported components and poster assets. Empty state offers import and a real Three.js starter download; no fabricated library entries.
+
+Desktop uses a spacious library and a preview-first workspace with settings/details/version history alongside. Responsive single-column configuration follows the preview on phones. Upload errors retain files/context, native JSON remains structurally editable, interactive packages use declared settings and public inputs in sandboxed frames. Approval is explicit, versions are immutable/pinned, management is administrator-only and code/dependencies never execute on the server. The importer stays outside installed modules. Verification is automated DOM/schema/API/SSR/static checks only under the user's existing policy; visual/browser acceptance has not been performed.

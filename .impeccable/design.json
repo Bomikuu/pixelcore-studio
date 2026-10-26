@@ -1,0 +1,84 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-10-23T11:03:56.659421+00:00",
+  "title": "Design System: Website Studio",
+  "extensions": {
+    "shadows": [
+      {
+        "name": "canvas",
+        "value": "0 8px 32px #00000040",
+        "purpose": "Separate the actual page from its editing workspace."
+      },
+      {
+        "name": "dialog",
+        "value": "0 24px 80px #00000080",
+        "purpose": "Library and setup focus."
+      }
+    ],
+    "motion": [
+      {
+        "name": "control",
+        "value": "140ms ease-out",
+        "purpose": "Respond to tool interactions."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "compactDesktop",
+        "value": "1200px"
+      },
+      {
+        "name": "tabletEditor",
+        "value": "950px"
+      },
+      {
+        "name": "phoneEditor",
+        "value": "650px"
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Publish action",
+      "kind": "button",
+      "refersTo": "button",
+      "description": "Single primary publication command.",
+      "html": "<button class=\"studio-primary\">Publish</button>",
+      "css": ".studio-primary{background:#3d5afe;color:#fff;border:0;border-radius:5px;padding:8px 14px;font:500 12px Manrope,sans-serif}"
+    },
+    {
+      "name": "Inspector input",
+      "kind": "input",
+      "refersTo": "input",
+      "description": "Compact field on the graphite inspector.",
+      "html": "<label class=\"studio-field\">Font size<input value=\"24\" aria-label=\"Font size\"></label>",
+      "css": ".studio-field{display:grid;gap:7px;color:#a0a3aa;font:11px Manrope,sans-serif}.studio-field input{background:#141517;border:1px solid #33363b;color:#f1f2f3;border-radius:5px;padding:7px 9px}"
+    }
+  ],
+  "narrative": {
+    "northStar": "The website is the work",
+    "overview": "A dark, precise workbench surrounding the full website. Popup libraries offer finished responsive designs; the normal workspace stays focused on the selected element.",
+    "keyCharacteristics": [
+      "Large real canvas",
+      "Graphite panels",
+      "Blue selection",
+      "Visual popup libraries",
+      "Context before choices"
+    ],
+    "rules": [
+      {
+        "name": "Independent themes",
+        "body": "Editor chrome never changes public site branding.",
+        "section": "colors"
+      }
+    ],
+    "dos": [
+      "Preserve host workflows and data context.",
+      "Preview actual renderer content."
+    ],
+    "donts": [
+      "Use color swatches as template previews.",
+      "Claim visual approval from automated semantics."
+    ]
+  }
+}

@@ -1,0 +1,5 @@
+# Premade templates
+
+Persuade mode for the published page; Operate mode for the existing template chooser. Complete responsive storefront, wedding/event and landing layouts live in `packages/renderer/src/premade.js`. Preserve Pixelcore’s chooser chrome and global font policy. Use context to select page structure, source data, palette and the primary visitor action. The shop leads to current products; the wedding leads to the private invitation response; the landing page leads to contact.
+
+Each layout includes one header, a complete body and a footer with approved social/contact links. Reuse core palettes, global typography and existing approved imagery. Distinguish compact/editorial, garden/invitation and split/image-led compositions. No invented business claims, reviews, social accounts or guest data. Missing sources have honest defaults; host frame and navigation remain authoritative. Keep previews inert, application undoable, and JSON portable. Automated DOM/accessibility checks cover structure and behavior; no browser visual acceptance was requested.

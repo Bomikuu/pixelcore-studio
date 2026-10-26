@@ -1,0 +1,13 @@
+# Studio dashboard and account workspace
+
+Mode: Operate. Approved 24 October 2026. Preserve Pixelcore's supplied icon, small 17px/9px live-text wordmark, Manrope, existing blue/neutral tokens, default light and optional dark. The supplied dashboard reference establishes a compact header, single labeled sidebar and spacious useful content. No invented traffic metrics or unimplemented testing controls.
+
+The standalone shell owns login, overview, builder entry, settings, analytics and privileged Component Lab navigation. A mounted builder owns its only header/tool navigation, with Studio account actions inserted in its header; the outer shell removes its header/sidebar. Component Lab removes its nested header. Below 800px disclose the single sidebar with a named menu button and Escape/outside dismissal; under 650px stack overview content. Canonical native Shadcn input recipes, an icon-only visibility action inside password inputs, custom tooltips, named account disclosure, semantic links and stable real/fallback avatars remain shared. Native selects intentionally retain OS popup ownership.
+
+Identity/business context is explicit. Host errors never fall back to samples. Saved drafts/publication and provider setup use real records. Writes retain failures and prevent duplicates. Dirty profile/security/analytics work is guarded; explicit sign-out uses the canonical dialog. Platform identities link to host settings. Analytics configuration is distinct from verification and requires affirmative host consent. Static automated DOM/accessibility, HTTP and backend checks provide evidence; visual/browser acceptance is excluded by user policy.
+
+Overview starts with real tenant-wide website, published, unpublished-change and latest-activity tiles. Publication filters retain their selection in the URL. Counts cover the tenant even when the visible site list is bounded.
+
+Discovery now searches/sorts/filters before server pagination, with retained URL queries and summary tile links. Saved section structure thumbnails are diagrams, not screenshots. Row actions keep Edit primary and group Analytics/View live under More. Analytics links retain explicit selection beyond the current row page.
+
+Loading/recovery refinement: center a small blue CSS ring spinner above actual-stage copy, including the initial HTML boot state. Keep animation CSS-only and static under reduced motion. Page failures use local browser/cube placeholder artwork, a focused heading, actionable status-specific recovery, and optional escaped details. Maintain light/dark tokens and useful fallback when art fails. Unknown routes have a missing-page screen; retry keeps the loader inside an existing shadow root. No browser visual acceptance has been performed.
