@@ -1,0 +1,19 @@
+{
+  "name": "@sitebuilder/renderer",
+  "version": "0.1.0",
+  "type": "module",
+  "exports": {
+    ".": {
+      "types": "./src/index.d.ts",
+      "default": "./src/index.js"
+    },
+    "./fonts.css": "./src/fonts.css"
+  },
+  "files": [
+    "src"
+  ],
+  "sideEffects": false,
+  "dependencies": {
+    "@sitebuilder/core": "0.1.0"
+  }
+}

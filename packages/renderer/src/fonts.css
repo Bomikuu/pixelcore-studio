@@ -1,0 +1,13 @@
+/* Self-hosted OFL faces: import this stylesheet once in installed hosts, including SSR. */
+@font-face {
+  font-family: 'Manrope';
+  src: url('./assets/fonts/manrope.ttf') format('truetype');
+  font-weight: 100 900;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Cormorant Garamond';
+  src: url('./assets/fonts/cormorantgaramond.ttf') format('truetype');
+  font-weight: 100 900;
+  font-display: swap;
+}
