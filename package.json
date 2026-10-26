@@ -1,0 +1,35 @@
+{
+  "name": "website-builder",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "workspaces": [
+    "packages/*"
+  ],
+  "engines": {
+    "node": ">=22.18"
+  },
+  "scripts": {
+    "dev": "node scripts/dev.mjs",
+    "test": "node --test tests/*.test.mjs",
+    "check": "node scripts/check.mjs",
+    "typecheck": "tsc --noEmit",
+    "test:backend": "node scripts/backend-tests.mjs",
+    "test:a11y": "node --test tests/accessibility.test.mjs",
+    "format": "prettier --write packages tests scripts examples/*.js *.md docs/*.md",
+    "format:check": "prettier --check packages tests scripts examples/*.js studio/web *.md docs/*.md",
+    "test:studio": "node scripts/studio-tests.mjs"
+  },
+  "devDependencies": {
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "@vue/server-renderer": "^3.5.44",
+    "axe-core": "^4.14.0",
+    "happy-dom": "^21.0.4",
+    "prettier": "^3.9.10",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1",
+    "typescript": "^7.0.2",
+    "vue": "^3.5.44"
+  }
+}
